@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rutvi Shah | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+        <a>Rutvi Shah</a>
+        <nav>
+            <a target="_blank" href="https://github.com/rutvi615"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/rutvi-s-77b612219/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Rutvi...</h1>
+                <p>Software Developer | Computational ChemE</p>
+            </div>
+            <h5 class="intro-description">
+                A chemical engineer by qualification, and a software engineer by trade. I explore the intersection of data science, machine learning, and physical systems.
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:rutvi.shah@iitgn.ac.in">Email me</a>
+                <a target="_blank" href="https://github.com/rutvi615">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/rutvi-s-77b612219/">LinkedIn</a>
+            </div>    
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programming</td>
+                        <td>Python | C | C++ | MATLAB | SQL | Verilog</td>
+                    </tr>
+                    <tr>
+                        <td>Libraries/Tools</td>
+                        <td>OpenCV | Scikit-learn | PyTorch | TensorFlow | Pandas | NumPy | Matplotlib | Seaborn</td>
+                    </tr>
+                    <tr>
+                        <td>Platforms</td>
+                        <td>Git | GitHub | Arduino IDE | Simulink | Autodesk Inventor</td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td>LaTeX | Docker (Basic)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="cards-grid">
+
+                <div class="project-card">
+                    <div>
+                        <p>Aug 2024 – Nov 2024</p>
+                        <h4>Human Activity Recognition</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Python</p></div>
+                            <div class="card-button-secondary"><p>TSFEL</p></div>
+                            <div class="card-button-secondary"><p>PCA</p></div>
+                        </div>
+                        <p>Analyzed sensor data from 30 participants using PCA and feature libraries to classify human activities.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/rutvi615/ML-assignment">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>Jan 2024 – Apr 2024</p>
+                        <h4>Computer Vision for Viscosity Estimation</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>OpenCV</p></div>
+                            <div class="card-button-secondary"><p>Python</p></div>
+                            <div class="card-button-secondary"><p>Image Processing</p></div>
+                        </div>
+                        <p>Tracked a ball's motion in fluid to estimate viscosity using video processing and Stokes’ law.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/rutvi615/CS_299">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>Aug 2024 – Present</p>
+                        <h4>Image Stitching for Vehicle Safety</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Depth Maps</p></div>
+                            <div class="card-button-secondary"><p>Image Stitching</p></div>
+                        </div>
+                        <p>Developing a stitching algorithm for under-vehicle images to identify safety hazards.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>Aug 2024 – Nov 2024</p>
+                        <h4>Heat Exchanger Modeling</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Radiation</p></div>
+                            <div class="card-button-secondary"><p>Convection</p></div>
+                            <div class="card-button-secondary"><p>Python</p></div>
+                        </div>
+                        <p>Modeled temperature profiles and energy efficiency in counter-current heat exchangers.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/rutvi615/double_pipe_heat_exchanger">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>Jan 2023 – Apr 2023</p>
+                        <h4>Statistical Analysis of Tennis Tournaments</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Python</p></div>
+                            <div class="card-button-secondary"><p>Pandas</p></div>
+                            <div class="card-button-secondary"><p>Scikit-learn</p></div>
+                        </div>
+                        <p>Explored probability distributions and applied clustering/PCA on Grand Slam tennis data.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/rutvi615/data_narrative">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by Rutvi Shah | <a href="https://github.com/rutvi615" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script>
+        // This is where we create the interactivity for our little color switching game
+
+        // 1. select all the html elements so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        // 2. create the functions 
+
+        function playGame() {
+            // this function enables the play of the game by showing the color selector input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // take the users selected color on the input, and assign it to be the background color of the website
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+    </script>
+</body>
+
+</html>
+   
